@@ -1,0 +1,4 @@
+functionName: xyz123
+handler: lambda_function.lambda_handler
+role: arn:aws:iam::759984737373:role/AWSLambdaBasicExecutionRole
+runtime: python3.10
