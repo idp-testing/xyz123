@@ -1,0 +1,36 @@
+name: Zip and Upload to S3
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # - name: Set up AWS CLI
+    #   uses: aws-actions/configure-aws-credentials@v2
+    #   with:
+    #     aws-region: your-aws-region  # Change this to your AWS region
+
+    # - name: Install dependencies
+    #   run: |
+    #     apt-get update
+    #     apt-get -y install zip
+    - name: Do things
+      run: |
+        echo something something dark side
+        echo yoooooooooo
+
+    # - name: Create zip file
+    #   run: |
+    #     zip -r my_archive.zip ./path/to/source
+
+    # - name: Upload to S3
+    #   run: |
+    #     aws s3 cp my_archive.zip s3://your-s3-bucket/path/to/destination/
